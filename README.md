@@ -1,1 +1,1 @@
-# Navjote_Ceremony
+# Navjote Ceremony

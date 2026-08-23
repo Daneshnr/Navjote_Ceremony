@@ -19,6 +19,18 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
+/* Heading at the top */
+.page-title {
+  position: absolute;
+  top: 20px;              /* distance from top */
+  left: 50%;
+  transform: translateX(-50%);
+  color: darkblue;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 2;             /* ensures it sits above the image */
+}
+
 /* Image container fills the viewport */
 .image-container {
   position: relative;
@@ -35,20 +47,18 @@ html, body {
 /* Overlay content sits on top of image */
 .overlay {
   position: absolute;
-  top: 50%;
+  bottom: 40px;           /* button near bottom */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   text-align: center;
-  color: darkblue;
 }
 
 /* Hyperlink image styled as button */
 .link-image {
   width: 120px;
   height: auto;
-  margin-top: 20px;
   cursor: pointer;
-  border-radius: 12px;  /* rounded corners */
+  border-radius: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }

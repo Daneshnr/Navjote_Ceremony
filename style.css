@@ -10,27 +10,35 @@ a {
   color: green;
   text-decoration: none;
 }
+/* Prevent scrolling, everything fits in one view */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;   /* disables scrolling */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Image container fills the viewport */
 .image-container {
-  height: 100vh;              /* full viewport height */
+  height: 100vh;
   display: flex;
-  justify-content: center;    /* horizontal center */
-  align-items: center;        /* vertical center */
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;          /* makes image cover the window */
-}
-.image-container {
-  height: 100vh;              /* full viewport height */
-  display: flex;
-  justify-content: center;    /* horizontal center */
-  align-items: center;        /* vertical center */
+  object-fit: cover;
 }
 
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;          /* fills the window */
+/* Style for hyperlink image */
+.link-image {
+  width: 100px;       /* adjust size as needed */
+  height: auto;
+  margin-top: 20px;
+  cursor: pointer;
 }

@@ -1,8 +1,12 @@
 /* Footer button sits at the bottom */
 .footer-button {
+  position: fixed;   /* lock to viewport */
+  bottom: 20px;      /* distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  margin-top: 10px;
 }
+
 
 /* Instruction text under button */
 .cta-text {

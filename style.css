@@ -48,16 +48,7 @@ html, body {
   object-fit: contain; /* show entire image */
 }
 
-/* Overlay content sits on top of image */
-.overlay {
-  position: absolute;
-  bottom: 40px;           
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-/* Hyperlink image styled as button */
+/* Hyperlink image styled as button with pulse animation */
 .link-image {
   width: 120px;
   height: auto;
@@ -65,12 +56,29 @@ html, body {
   border-radius: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  animation: pulse 2s infinite; /* pulsing animation */
 }
 
 /* Hover effect */
 .link-image:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+/* Pulse animation keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 128, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 128, 0, 0.7);
+  }
 }
 
 /* Footer button sits at the bottom */

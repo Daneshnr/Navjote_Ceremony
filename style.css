@@ -12,7 +12,7 @@
   font-weight: bold;
 }
 
-/* Button with pulse animation */
+/* Button with smoother pulse animation */
 .link-image {
   width: 120px;
   height: auto;
@@ -20,27 +20,27 @@
   border-radius: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  animation: pulse 2s infinite; /* pulsing animation */
+  animation: pulse 2.5s ease-in-out infinite; /* smoother timing */
 }
 
 /* Hover effect */
 .link-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 /* Pulse animation keyframes */
 @keyframes pulse {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 0 rgba(0, 128, 0, 0.7);
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
   }
   50% {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0, 128, 0, 0.7);
+    transform: scale(1.12);
+    box-shadow: 0 0 25px rgba(0, 128, 0, 0.8);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 0 rgba(0, 128, 0, 0.7);
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
   }
 }

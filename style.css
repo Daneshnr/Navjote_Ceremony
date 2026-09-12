@@ -22,13 +22,13 @@ html, body {
 /* Heading at the top */
 .page-title {
   position: absolute;
-  top: 20px;              /* distance from top */
+  top: 20px;              
   left: 50%;
   transform: translateX(-50%);
   color: darkblue;
   font-size: 28px;
   font-weight: bold;
-  z-index: 2;             /* ensures it sits above the image */
+  z-index: 2;             
 }
 
 /* Image container fills the viewport */
@@ -39,18 +39,19 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f4f4f4; /* fallback background */
 }
 
 .image-container img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Show entire image without cropping */
+  object-fit: contain; /* show entire image */
 }
 
 /* Overlay content sits on top of image */
 .overlay {
   position: absolute;
-  bottom: 40px;           /* button near bottom */
+  bottom: 40px;           
   left: 50%;
   transform: translateX(-50%);
   text-align: center;

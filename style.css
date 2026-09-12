@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Georgia', serif;
-  background-color: #FAF7F1; /* your chosen background */
+  background-color: #FAF7F1; /* soft cream background */
   text-align: center;
 }
 
@@ -16,7 +16,30 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
-  border-radius: 50%;    /* makes edges rounded */
+  border-radius: 50%;    /* rounded edges */
   filter: blur(2px);     /* soft blur effect */
-  box-shadow: 0 0 20px rgba(0,0,0,0.3); /* glow around edges */
+  box-shadow: 0 0 25px rgba(0,0,0,0.3); /* glow around edges */
+}
+
+/* Ceremony heading */
+.ceremony-heading {
+  font-size: 32px;
+  color: #A3472F;        /* requested reddish-brown shade */
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+}
+
+/* Subheading */
+.ceremony-subheading {
+  font-size: 24px;
+  color: #7B2D26;        /* complementary deep red */
+  margin: 5px 0;
+}
+
+/* Motto */
+.ceremony-motto {
+  font-size: 20px;
+  font-style: italic;
+  color: #2F5233;        /* deep green for balance */
+  margin-top: 10px;
 }

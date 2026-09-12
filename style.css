@@ -1,50 +1,39 @@
-/* Footer button sits at the bottom */
-.footer-button {
-  position: fixed;   /* lock to viewport */
-  bottom: 20px;      /* distance from bottom */
-  left: 50%;
-  transform: translateX(-50%);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif; /* change font here */
+  background-color: #f4f4f4;     /* change background color */
   text-align: center;
 }
 
-
-/* Instruction text under button */
-.cta-text {
-  font-size: 16px;
-  color: darkblue;
-  margin-top: 8px;
-  font-weight: bold;
+.welcome-container {
+  height: 100vh;                 /* full viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Button with smoother pulse animation */
-.link-image {
-  width: 120px;
-  height: auto;
-  cursor: pointer;
-  border-radius: 12px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  animation: pulse 2.5s ease-in-out infinite; /* smoother timing */
+.symbol {
+  font-size: 60px;               /* placeholder symbol size */
+  margin-bottom: 20px;
 }
 
-/* Hover effect */
-.link-image:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+h1 {
+  font-size: 32px;
+  color: darkblue;               /* change heading color */
+  margin: 10px 0;
 }
 
-/* Pulse animation keyframes */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
-  }
-  50% {
-    transform: scale(1.12);
-    box-shadow: 0 0 25px rgba(0, 128, 0, 0.8);
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
-  }
+h2 {
+  font-size: 24px;
+  color: darkred;                /* change subheading color */
+  margin: 5px 0;
+}
+
+.motto {
+  font-size: 20px;
+  font-style: italic;
+  color: darkgreen;              /* change motto color */
+  margin-top: 10px;
 }

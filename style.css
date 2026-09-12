@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Georgia', serif; /* change font here */
-  background-color: #f4f4f4;     /* change background color */
+  background-color: #FAF7F1;     /* new background color */
   text-align: center;
 }
 
@@ -21,19 +21,20 @@ body {
 
 h1 {
   font-size: 32px;
-  color: #A3472F;               /* change heading color */
+  color: #A3472F;                /* custom reddish-brown shade */
   margin: 10px 0;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 24px;
-  color: #826F59;                /* change subheading color */
+  color: darkred;
   margin: 5px 0;
 }
 
 .motto {
   font-size: 20px;
   font-style: italic;
-  color: #826F59;              /* change motto color */
+  color: darkgreen;
   margin-top: 10px;
 }

@@ -1,54 +1,18 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+/* Footer button sits at the bottom */
+.footer-button {
   text-align: center;
-}
-h1 {
-  color: darkblue;
-}
-a {
-  color: green;
-  text-decoration: none;
-}
-/* Prevent scrolling, everything fits in one view */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-  font-family: Arial, sans-serif;
+  margin-top: 10px;
 }
 
-/* Heading at the top */
-.page-title {
-  position: absolute;
-  top: 20px;              
-  left: 50%;
-  transform: translateX(-50%);
+/* Instruction text under button */
+.cta-text {
+  font-size: 16px;
   color: darkblue;
-  font-size: 28px;
+  margin-top: 8px;
   font-weight: bold;
-  z-index: 2;             
 }
 
-/* Image container fills the viewport */
-.image-container {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4f4; /* fallback background */
-}
-
-.image-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* show entire image */
-}
-
-/* Hyperlink image styled as button with pulse animation */
+/* Button with pulse animation */
 .link-image {
   width: 120px;
   height: auto;
@@ -79,10 +43,4 @@ html, body {
     transform: scale(1);
     box-shadow: 0 0 0 rgba(0, 128, 0, 0.7);
   }
-}
-
-/* Footer button sits at the bottom */
-.footer-button {
-  text-align: center;
-  margin-top: 10px;   /* space between image and button */
 }
